@@ -1,0 +1,19 @@
+.get-link {
+    margin: 0;
+    padding: 14px 39px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    background-color: $orange ;
+    color: $white;
+    border: 1px solid $orange;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $grey;
+        color: $orange;
+    }
+   
+
+}

@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body  {
+margin: 0;
+padding: 0;
+font-size: 15px;
+font-family: SpaceMono, Arial , sans-serif; 
+line-height: 1.5;
+background-color:#F2F2F2 ;
+color: #939CAA;
+height: 100vh;
+display: flex;
+flex-direction: column;
+
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

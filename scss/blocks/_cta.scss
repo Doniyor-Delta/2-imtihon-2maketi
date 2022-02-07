@@ -1,0 +1,151 @@
+.cta {
+    overflow: hidden;  
+    background-color: $black;
+    
+}
+
+
+
+.cta__container {
+    padding-top: 102px;
+    padding-bottom: 102px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+
+        content: '';
+        position: absolute;
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border:15px solid #E5ECF4;
+        opacity: 0.1;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+       background-color: transparent;
+       top: 122px;
+       right: 70px;
+       
+    }
+    &::after {
+
+        content: '';
+        position: absolute;
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border:15px solid #E5ECF4;
+        opacity: 0.1;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+       background-color: transparent;
+       top: 122px;
+       right: 473px;
+       
+    }
+
+
+}
+
+.cta__oval {
+position: absolute;
+    width: 347px;
+    height: 347px;
+    display: block;
+    background-color: #E5ECF4;
+    opacity: 0.1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 50%;
+  top: 132px;
+  right: -315px;
+ 
+}
+
+
+.cta__title {
+    max-width: 415px;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+margin: 0;
+color: $white;
+}
+
+.cta__link-cite {
+    margin-right: 18px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+   
+}
+
+@media screen and (max-width: $tablet){ 
+
+    .cta__container {
+        padding-top: 62px;
+        padding-bottom: 62px;
+        flex-direction: column;
+        text-align: center;
+    
+        &::before {
+    
+            content: '';
+      
+            top: 150px;
+           right: 270px;
+           
+        }
+        &::after {
+    
+            content: '';
+       
+           top: 150px;
+           right: 673px;
+           
+        }
+    
+    
+    }
+    
+    .cta__oval {
+   
+      top: 158px;
+      right: -155px;
+     
+    }
+
+    .cta__title {
+        
+        max-width: 447px;
+        margin-bottom: 40px;
+    }
+    
+    
+}
+
+@media screen and (max-width: $mobile){
+
+    .cta__container {
+        padding-top: 88px;
+        padding-bottom: 88px;
+
+        &::after {
+            display: none;
+        }
+
+    }
+
+    .cta__title {
+        max-width: 311px;
+        font-size: 32px;
+      line-height: 32px;
+       letter-spacing: -1.42857px;
+    }
+    
+    
+}
