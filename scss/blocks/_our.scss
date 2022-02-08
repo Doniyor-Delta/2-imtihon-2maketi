@@ -1,0 +1,233 @@
+.our__container {
+    padding-bottom: 120px;
+}
+
+.our__title {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px; 
+    color: $black;
+    margin: 0;
+    text-align: center;
+}
+
+.our__list {
+    @include reset-list;
+    display: flex;
+    margin-top: 103px;
+}
+
+.our__item {
+   
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.our__item-img {
+margin: 0 auto;
+display: block;
+width: 240px;
+height: 240px;
+border-radius: 50%;
+background-size: cover;
+
+
+
+}
+
+.our__img-phone {
+position: relative;
+    background: url(../img/our-phone.png) no-repeat, center center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background-color: $orange;
+        border-radius: 50%;
+        bottom: -55px;
+        right: calc(50% - 48px) ;
+    }
+
+    &::after {
+        content: '';
+        width: 29px;
+        height: 28px;
+        background: url(../img/our-01.png) no-repeat, center center;
+        position: absolute;
+        bottom: -27px;
+        z-index: 2;
+        right: calc(50% - 14px);
+
+    }
+    
+
+}
+.our__img-moto {
+
+    background: url(../img/our-moto.png) no-repeat, center center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background-color: $orange;
+        border-radius: 50%;
+        bottom: -55px;
+        right: calc(50% - 48px) ;
+    }
+
+    &::after {
+        content: '';
+        width: 29px;
+        height: 28px;
+        background: url(../img/our-2.png) no-repeat, center center;
+        position: absolute;
+        bottom: -27px;
+        z-index: 2;
+        right: calc(50% - 14px);
+
+    }
+    
+
+}
+.our__img-people {
+
+    background: url(../img/our-people.png) no-repeat, center center;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background-color: $orange;
+        border-radius: 50%;
+        bottom: -55px;
+        right: calc(50% - 48px) ;
+    }
+
+    &::after {
+        content: '';
+        width: 29px;
+        height: 28px;
+        background: url(../img/our-3.png) no-repeat, center center;
+        position: absolute;
+        bottom: -27px;
+        z-index: 2;
+        right: calc(50% - 14px);
+
+    }
+
+}
+
+.our__item-title {
+
+padding-top: 87px;
+padding-bottom: 27px;
+font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: -1.07143px;
+color: $black;
+max-width: 350px;
+    
+} 
+
+.our__item-description {
+margin: 0;    
+font-family: Lexend Deca;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+color: $grey;
+max-width: 350px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .intro{
+    
+    background-image: url(../img/our-phone@2x.png);
+    background-image: url(../img/our-moto@2x.png);
+    background-image: url(../img/our-people@2x.png);
+
+  }
+}
+
+
+@media screen and (max-width: $tablet){
+
+    .our__item {
+        margin-bottom: 55px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+   .our__title {
+       max-width: 457px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+  
+
+   .our__list {
+       flex-direction: column;
+   }
+
+   .our__item-title {
+       max-width: 457px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .our__item-description {
+       max-width: 457px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+  
+}
+
+@media screen and (max-width: $mobile) {
+
+    .our__container{
+        padding-bottom: 145px;
+    }
+
+    .our__title {
+        max-width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.42857px;
+    }
+
+    
+
+
+    
+    
+}

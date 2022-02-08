@@ -1,0 +1,94 @@
+.intro {
+    background: url(../img/intro.png) no-repeat, center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 3px solid $white;
+     right: 141px;
+       bottom: 69px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 3px solid $white;
+     right: 55px;
+       bottom: 69px;
+    }
+}
+
+.intro__oval {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 3px solid $white;
+ right: -31px;
+   bottom: 69px;
+   background-color: $white;
+}
+
+.intro__container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.intro__title {
+    max-width: 162px;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+letter-spacing: -2.5px;
+color: $white;
+margin: 0;
+}
+
+@media screen and (max-width: $tablet){
+
+    .intro__title {
+        margin-left: 58px;
+    }
+    
+    
+}
+
+@media screen and (max-width: $mobile) {
+
+    .intro {
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .intro__oval {
+        display: none;
+    }
+    
+    .intro__title {
+        max-width: 311px;
+        font-size: 40px;
+line-height: 40px;
+letter-spacing: -1.78571px;
+
+    }
+    
+}
