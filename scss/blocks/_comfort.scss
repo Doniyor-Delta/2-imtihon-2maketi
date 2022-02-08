@@ -5,25 +5,26 @@
 .comfort__container {
     padding-top: 120px;
     padding-bottom: 78px;
-   
+
 }
 
 .comfort__list {
     @include reset-list;
-    
+
 }
 
 .comfort__item {
     margin-bottom: 160px;
-display: flex;
-justify-content: space-between;
-position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
     }
 
 }
+
 .comfort__item-city {
     flex-direction: row-reverse;
 }
@@ -38,16 +39,17 @@ position: relative;
     width: 445px;
     height: 445px;
     border-radius: 50%;
-    background-size: cover ;
+    background-size: cover;
     margin: 0 auto;
-    
-  
+
+
 
 }
 
 .comfort__img-phone {
     background: url(../img/comfort-1.png) no-repeat, center center;
 }
+
 .comfort__img-city {
     background: url(../img/comfort-2.png) no-repeat, center center;
 }
@@ -57,76 +59,77 @@ position: relative;
 
 
 .comfort__item::after {
-        content: '';
-        position: absolute;
-        width: 445px;
-        height: 445px;
-        background-color: #E5ECF4;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        bottom: 0;
-        right: calc(-50% + 64px);
-        z-index: -1;
+    content: '';
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    background-color: #E5ECF4;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    bottom: 0;
+    right: calc(-50% + 64px);
+    z-index: -1;
 
-    }
+}
 
 
 
 .comfort__item-title {
     max-width: 445px;
     font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 48px;
-letter-spacing: -2.14286px;
-color: $black;
-margin: 0 auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $black;
+    margin: 0 auto;
 
 }
 
 .comfort__item-description {
     max-width: 445px;
     font-family: Lexend Deca;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 25px;
-color: $grey;
-margin-top: 24px;
-margin-bottom: 40px;
-margin-left: auto;
-margin-right: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $grey;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .comfort__item-content {
     padding-top: 66px;
-padding-bottom: 66px;
+    padding-bottom: 66px;
 }
 
 
 .comfort__img {
- border-radius: 50%;    
+    border-radius: 50%;
 }
 
 
 .comfort__item-call {
+
     position: relative;
 
     &::before {
-    content: '';
-    position: absolute;
-    background: url(../img/comfort-line-1.svg) no-repeat, center center;
-    width: 735px;
-    height: 150px;
-   bottom: 38px;
-   right: -130px;
-}
+        content: '';
+        position: absolute;
+        background: url(../img/comfort-line-1.svg) no-repeat, center center;
+        width: 735px;
+        height: 150px;
+        bottom: 38px;
+        right: -130px;
+    }
 
 }
 
 .comfort__item-city {
-    position: relative; 
+    position: relative;
 
     &::before {
         position: absolute;
@@ -141,20 +144,19 @@ padding-bottom: 66px;
 
 
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-  .intro{
-    background-image: url(../img/comfort-1@2x.png);
-    background-image: url(../img/comfort-2@2x.png);
-   
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 
-  }
+    .intro {
+        background-image: url(../img/comfort-1@2x.png);
+        background-image: url(../img/comfort-2@2x.png);
+
+
+    }
 }
 
 
@@ -163,86 +165,88 @@ only screen and (                min-resolution: 2dppx) {
 @media screen and (max-width: $tablet) {
 
 
-  .comfort__container {
-      
-      text-align: center;
-      padding-top: 144px;
-      padding-bottom: 120px;
-  }
+    .comfort__container {
 
-  .comfort__item {
-    
-    flex-direction: column-reverse;
-    margin-bottom: 120px;
+        text-align: center;
+        padding-top: 144px;
+        padding-bottom: 120px;
+    }
 
-    &:last-child {
-        margin-bottom: 0;
+    .comfort__item {
+
+        flex-direction: column-reverse;
+        margin-bottom: 120px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+
+
+
     }
 
 
-  
-  
-}  
-     
-    
     .comfort__item-content {
         text-align: center;
     }
-     
-     .comfort__item-title {
-         max-width: 457px;
-     }
+
+    .comfort__item-title {
+        max-width: 457px;
+    }
 
     .comfort__item-title {
         max-width: 573px;
     }
-  
+
     .comfort__item-call::before {
         content: '';
         top: 253px;
         left: 0;
-       
+
     }
+
     .comfort__item-city::before {
         content: '';
         top: 0;
         left: -432;
-       
+
     }
+
     .comfort__item::after {
         content: '';
-       
-       top: 0;
-        
+
+        top: 0;
+
 
     }
-   
 
-    
+
+
 }
 
-@media screen and (max-width: $mobile){
+@media screen and (max-width: $mobile) {
 
-   .comfort__img {
-       width: 311px;
-       height: 311px;
-       background-size: contain;
-   }
+    .comfort__img {
+        width: 311px;
+        height: 311px;
+        background-size: contain;
+    }
 
-   .comfort__item::after {
-       display: none;
-   }
-   
-   .comfort__item-call::before {
-       content: '';
-       top: 140px;
-   }
+    .comfort__item::after {
+        display: none;
+    }
 
-   .comfort__item-city::before {
-    content: '';
-    top: 0;
-    left: -420px;
-   
-}
-    
+    .comfort__item-call::before {
+        content: '';
+        top: 140px;
+    }
+
+    .comfort__item-city::before {
+        content: '';
+        top: 0;
+        left: -420px;
+
+    }
+
 }

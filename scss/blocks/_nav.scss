@@ -1,10 +1,11 @@
 .nav {
     flex-grow: 1;
 }
+
 .nav__list {
- @include reset-list;
- display: flex;
- align-items: baseline;
+    @include reset-list;
+    display: flex;
+    align-items: baseline;
 
 }
 
@@ -13,14 +14,15 @@
     margin-right: 32px;
 
     &:last-child {
- margin-right: 0;
+        margin-right: 0;
 
     }
-    
-   
+
+
 }
+
 .nav__link {
-font-weight: bold;
-line-height: 25px;
-color: $grey;
+    font-weight: bold;
+    line-height: 25px;
+    color: $grey;
 }

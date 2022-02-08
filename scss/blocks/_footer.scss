@@ -2,7 +2,7 @@
     padding-top: 35px;
     padding-bottom: 32px;
     background-color: #333A44;
-    
+
 }
 
 .footer__container {
@@ -14,7 +14,7 @@
 .footer__list {
     @include reset-list;
     display: flex;
-    
+
 }
 
 .footer__item {
@@ -29,7 +29,7 @@
 
 
 
-@media screen and (max-width: $mobile){
+@media screen and (max-width: $mobile) {
 
     .footer {
         padding-top: 64px;
@@ -49,10 +49,10 @@
     .footer__nav-item {
         margin-bottom: 16px;
 
-       &:last-child {
-           margin-bottom: 0;
-       }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-    
-    
+
+
 }

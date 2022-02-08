@@ -1,5 +1,18 @@
 .our__container {
     padding-bottom: 120px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background: #E5ECF4;
+        top: -15%;
+        left: -35%;
+    }
 }
 
 .our__title {
@@ -9,7 +22,7 @@
     font-size: 48px;
     line-height: 48px;
     text-align: center;
-    letter-spacing: -2.14286px; 
+    letter-spacing: -2.14286px;
     color: $black;
     margin: 0;
     text-align: center;
@@ -22,7 +35,7 @@
 }
 
 .our__item {
-   
+
     margin-right: 30px;
 
     &:last-child {
@@ -31,19 +44,19 @@
 }
 
 .our__item-img {
-margin: 0 auto;
-display: block;
-width: 240px;
-height: 240px;
-border-radius: 50%;
-background-size: cover;
+    margin: 0 auto;
+    display: block;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-size: cover;
 
 
 
 }
 
 .our__img-phone {
-position: relative;
+    position: relative;
     background: url(../img/our-phone.png) no-repeat, center center;
 
     &::before {
@@ -54,7 +67,7 @@ position: relative;
         background-color: $orange;
         border-radius: 50%;
         bottom: -55px;
-        right: calc(50% - 48px) ;
+        right: calc(50% - 48px);
     }
 
     &::after {
@@ -68,9 +81,10 @@ position: relative;
         right: calc(50% - 14px);
 
     }
-    
+
 
 }
+
 .our__img-moto {
 
     background: url(../img/our-moto.png) no-repeat, center center;
@@ -84,7 +98,7 @@ position: relative;
         background-color: $orange;
         border-radius: 50%;
         bottom: -55px;
-        right: calc(50% - 48px) ;
+        right: calc(50% - 48px);
     }
 
     &::after {
@@ -98,14 +112,15 @@ position: relative;
         right: calc(50% - 14px);
 
     }
-    
+
 
 }
+
 .our__img-people {
 
     background: url(../img/our-people.png) no-repeat, center center;
     position: relative;
-    
+
     &::before {
         content: '';
         position: absolute;
@@ -114,7 +129,7 @@ position: relative;
         background-color: $orange;
         border-radius: 50%;
         bottom: -55px;
-        right: calc(50% - 48px) ;
+        right: calc(50% - 48px);
     }
 
     &::after {
@@ -133,51 +148,56 @@ position: relative;
 
 .our__item-title {
 
-padding-top: 87px;
-padding-bottom: 27px;
-font-family: Space Mono;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-letter-spacing: -1.07143px;
-color: $black;
-max-width: 350px;
-    
-} 
+    padding-top: 87px;
+    padding-bottom: 27px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: $black;
+    max-width: 350px;
+
+}
 
 .our__item-description {
-margin: 0;    
-font-family: Lexend Deca;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
-color: $grey;
-max-width: 350px;
+    margin: 0;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $grey;
+    max-width: 350px;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-  .intro{
-    
-    background-image: url(../img/our-phone@2x.png);
-    background-image: url(../img/our-moto@2x.png);
-    background-image: url(../img/our-people@2x.png);
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 
-  }
+    .intro {
+
+        background-image: url(../img/our-phone@2x.png);
+        background-image: url(../img/our-moto@2x.png);
+        background-image: url(../img/our-people@2x.png);
+
+    }
 }
 
 
-@media screen and (max-width: $tablet){
+@media screen and (max-width: $tablet) {
+
+    .our__container::before {
+        left: -45%;
+        top: -30%;
+        z-index: -1;
+    }
 
     .our__item {
         margin-bottom: 55px;
@@ -187,35 +207,39 @@ only screen and (                min-resolution: 2dppx) {
         }
     }
 
-   .our__title {
-       max-width: 457px;
-       margin-left: auto;
-       margin-right: auto;
-   }
-  
+    .our__title {
+        max-width: 457px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-   .our__list {
-       flex-direction: column;
-   }
 
-   .our__item-title {
-       max-width: 457px;
-       margin-left: auto;
-       margin-right: auto;
-   }
+    .our__list {
+        flex-direction: column;
+    }
 
-   .our__item-description {
-       max-width: 457px;
-       margin-left: auto;
-       margin-right: auto;
-   }
-  
+    .our__item-title {
+        max-width: 457px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .our__item-description {
+        max-width: 457px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (max-width: $mobile) {
 
-    .our__container{
+    .our__container {
         padding-bottom: 145px;
+
+        &::before {
+            display: none;
+        }
     }
 
     .our__title {
@@ -225,9 +249,9 @@ only screen and (                min-resolution: 2dppx) {
         letter-spacing: -1.42857px;
     }
 
-    
 
 
-    
-    
+
+
+
 }
